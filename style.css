@@ -1,0 +1,63 @@
+#gridTable {
+    border-collapse: collapse;
+}
+
+#gridTable td, #gridTable th {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.grid-label {
+    font-weight: bold; /* Make label cells bold */
+    background-color: #d0d0d0; /* Light gray background */
+}
+
+#inputArea {
+    margin-top: 10px;
+}
+
+#inputArea input {
+    width: 20px;
+    margin-right: 1px;
+    text-align: center;
+}
+
+#inputArea input.incorrect {
+    background-color: red;
+}
+
+.input-container {
+    display: inline-block; /* Align input boxes horizontally */
+    margin-right: 5px; /* Space between input boxes */
+}
+
+.input-label {
+    display: block; /* Make label a block element to appear below the input box */
+    text-align: center; /* Center the label text below the input box */
+}
+
+#gridContainer {
+    display: flex;
+}
+
+#columnLabels, #rowLabels {
+    display: flex;
+    flex-direction: column;
+}
+
+#columnLabels div, #rowLabels div {
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(26, 20px); /* 26 columns */
+    grid-gap: 1px;
+    margin-left: 5px;
+}
+
+.highlight {
+    background-color: #ffff99; /* Yellow background for highlighting */
+}
